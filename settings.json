@@ -1,0 +1,62 @@
+    // LaTeX言語の設定
+    "[tex]": {
+        // スニペット補完中にも補完を使える
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // 折返しを許可
+        "editor.wordWrap": "on",
+    },
+    "[latex]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.wordWrap": "on",
+    },
+    
+    "latex-workshop.intellisense.package.enabled": true,
+    
+// settings.json
+"latex-workshop.latex.recipe.default": "latexmk (latexmkrc)"
+,
+        
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.renderControlCharacters": true,
+    "git.autofetch": true,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "．": true,
+        "，": true
+    },
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/.aux": true,
+        "**/syntex.gz": true
+    },
+    "editor.tabCompletion": "on",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.dvi",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.synctex(busy)",
+        "*.synctex.gz(busy)",
+        "*.nav",
+        "*.vrb",
+        "*.synctex.gz"
+    ],
+   
+    "editor.minimap.enabled": false
+}
